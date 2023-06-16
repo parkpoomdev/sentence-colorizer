@@ -3,7 +3,7 @@
 Colored Sentence is a web application that generates visually appealing sentences by assigning unique background colors to each word. Enhance your text with vibrant hues and create eye-catching displays.
 
 Demo Link: 
-[Opens in new tab](https://parkpoomdev.github.io/sentence-colorizer/)
+[Colored Sentence Demo](https://parkpoomdev.github.io/sentence-colorizer/)
 
 ## Features
 
