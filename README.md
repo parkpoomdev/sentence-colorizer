@@ -8,6 +8,8 @@ Colored Sentence is a web application that generates visually appealing sentence
 - Use a pastel color palette to create visually pleasing combinations.
 - Automatic color assignment ensures each word stands out distinctly.
 
+![image](https://github.com/parkpoomdev/sentence-colorizer/assets/95712446/be5d42e0-5632-4ef2-be66-6d047f1e4684)
+
 ## Installation
 
 1. Add CSS Style in the index.html 
