@@ -1,0 +1,58 @@
+body {
+  text-align: center;
+}
+
+.input-container {
+  margin-bottom: 10px;
+}
+
+.colored-sentence {
+  text-align: left;
+}
+
+.word1 {
+  background-color: blue;
+}
+
+.word2 {
+  background-color: green;
+}
+
+.word3 {
+  background-color: red;
+}
+
+.word4 {
+  background-color: orange;
+}
+
+.word5 {
+  background-color: purple;
+}
+
+.word6 {
+  background-color: brown;
+}
+
+/* Add more classes for additional words */
+/* Style for the colored sentence container */
+.colored-sentence {
+  display: inline-block;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+}
+
+/* Style for the word tags */
+.tag {
+  padding: 2px 5px;
+  margin-right: 5px;
+  border-radius: 4px;
+  color: white;
+}
+
+.colored-sentence {
+  line-height: 1.5;
+  width: 50%;
+  display: inline-block;
+}
