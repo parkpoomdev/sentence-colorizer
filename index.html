@@ -1,0 +1,44 @@
+<body>
+  <div class="input-container">
+    <label for="sentenceInput">Enter a sentence:</label><br>
+    <textarea style="width:50%; height:200px;" id="sentenceInput" oninput="generateColoredSentence()"></textarea>
+  </div>
+
+  <section id="resultSection" style="display: none;">
+    <h2>Colored Sentence</h2>
+    <div class="colored-sentence" id="coloredSentence"></div>
+  </section>
+
+  <script>
+    function generateColoredSentence() {
+      var sentence = document.getElementById('sentenceInput').value;
+      var tokens = sentence.split(" ");
+      var coloredSentence = '';
+      for (var i = 0; i < tokens.length; i++) {
+        var word = tokens[i];
+        var className = 'word' + ((i % 6) + 1); // Cycle through word1 to word6
+        var span = '<span class="tag ' + className + '">' + word + '</span> ';
+        coloredSentence += span;
+      }
+      var coloredSentenceContainer = document.getElementById('coloredSentence');
+      coloredSentenceContainer.innerHTML = coloredSentence;
+      // Check if the sentence is empty
+      if (sentence.trim() === '') {
+        coloredSentenceContainer.style.backgroundColor = 'transparent';
+        // Remove background color for each word
+        var wordTags = coloredSentenceContainer.getElementsByClassName('tag');
+        for (var j = 0; j < wordTags.length; j++) {
+          wordTags[j].style.backgroundColor = 'transparent';
+        }
+      } else {
+        coloredSentenceContainer.style.backgroundColor = '#f1f1f1';
+        // Reset background color for each word
+        var wordTags = coloredSentenceContainer.getElementsByClassName('tag');
+        for (var j = 0; j < wordTags.length; j++) {
+          wordTags[j].style.backgroundColor = '';
+        }
+      }
+      document.getElementById('resultSection').style.display = 'block';
+    }
+  </script>
+</body>
